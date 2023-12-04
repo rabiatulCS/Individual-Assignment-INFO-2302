@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM1 Campaign Program</title>
+  
+  <link rel="stylesheet" href="RM1-Campaign.css">
+  <script src="RM1-Campaign.js"></script> 
+
+</head>
+<body>
+  </style>
+</head>
+<body>
+    
+  <header>
+    <div id="iium_logo">
+        <img src="iium_logo.png" alt="IIUM Logo" />
+    </div>
+    <h1>RM1 Campaign</h1>
+    
+    <p>مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍۢ مِّا۟ئَةُ حَبَّةٍۢ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ
+        <br><br>
+       "The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. 
+       <br>
+       And Allah multiplies [His reward] for whom He wills. And Allah is all-Encompassing and Knowing."
+       <br><br>
+       (Al-Baqarah:261)
+    </p>
+  </header>
+  
+  <section>
+    <div id="program_image">
+      <img id="program_image" src="program_image.png" alt="Program Image" />
+    </div>
+
+    <h2>Participation in RM1 Campaign-Monthly Salary Deduction Form</h2>
+
+    <div id="button_form">
+      <button onclick="scrollToForm1()">RM1 Campaign</button>
+      <button onclick="scrollToForm2()">RM1 Campaign-Kulliyyah Based</button>
+    </div>
+
+    <form id="salaryForm1" action="#" method="post" onsubmit="return showThankYou1();"> 
+      
+      <h3>RM1 Campaign</h3>
+      
+      <label for="name">Name:<span aria-label="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="staffno">Staff No.:<span aria-label="required">*</span></label>
+      <input type="text" id="staffno" name="staffno" required>
+
+      <label for="data">K/C/D/I/O:<span aria-label="required">*</span></label>
+      <input type="text" id="data" name="data" required>
+
+      <label for="contact">Contact No.:<span aria-label="required">*</span></label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="email">Email:<span aria-label="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="amount">Amount to be deducted (RM):<span aria-label="required">*</span></label>
+      <input type="number" id="amount" name="amount" required>
+
+      <label for="startdate">Start date:<span aria-label="required">*</span></label>
+      <input type="date" id="startdate" name="startdate" required>
+
+      <label for="enddate">End date:<span aria-label="required">*</span></label>
+      <input type="date" id="enddate" name="enddate" required>
+
+      <button type="submit">Submit</button>
+</form>
+
+
+<form id="salaryForm2" action="#" method="post" onsubmit="return showThankYou2();"> 
+
+  <h3>RM1 Campaign-Kulliyyah Based</h3>
+  
+  <label for="name">Name:<span aria-label="required">*</span></label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="staffno">Staff No.:<span aria-label="required">*</span></label>
+  <input type="text" id="staffno" name="staffno" required>
+
+  <label for="data">K/C/D/I/O:<span aria-label="required">*</span></label>
+  <input type="text" id="data" name="data" required>
+
+  <label for="contact">Contact No.:<span aria-label="required">*</span></label>
+  <input type="text" id="contact" name="contact" required>
+
+  <label for="email">Email:<span aria-label="required">*</span></label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="amount">Amount to be deducted (RM):<span aria-label="required">*</span></label>
+  <input type="number" id="amount" name="amount" required>
+
+  <label for="startdate">Start date:<span aria-label="required">*</span></label>
+  <input type="date" id="startdate" name="startdate" required>
+
+  <label for="enddate">End date:<span aria-label="required">*</span></label>
+  <input type="date" id="enddate" name="enddate" required>
+
+  <label for="kulliyyah">For kulliyyah of:<span aria-label="required">*</span></label>
+  <input type="text" id="kulliyyah" name="kulliyyah" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div id="thankYouMessage">Thank you for your contribution!</div>
+    
+  </section>
+
+  <section>
+    <h3>IIUM Endowment Fund Contact Information</h3>
+    <p>
+        Postal Address:<br>
+        Level 3, Rectory<br>
+        International Islamic University Malaysia<br>
+        P.O Box 10<br>
+        50728 Kuala Lumpur</p>
+    <p>
+        Contact Us at:<br>
+        Tel: 03 6196 4268<br>
+        Email: ief@iium.edu.my<br>
+        Website: www.iium.edu.my/ief<br>
+        Facebook : www.facebook.com/ief.official/
+    </p>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </section>
+
+
+  <footer>
+    Copyright 2023 &copy; International Islamic University Malaysia
+  </footer>
+
+</body>
+</html>
